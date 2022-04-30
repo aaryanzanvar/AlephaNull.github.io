@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.open-nav {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    margin-left: 0px;
+  }
+
+  .hamburger, .close-x {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    opacity: 0.75;
+    border-bottom: 1px solid black;
+    background: #858089;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    /* ul */
+  }
+  nav ul {
+    padding: 0;
+    margin-top: 8em;
+    /* a */
+  }
+  nav ul a {
+    padding: 0.75em 23em;
+    display: block;
+    width: 100%;
+    /*  hover */
+  }
+  nav ul a:hover {
+    background: white;
+  }
+  nav .close-x {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    margin: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+  }
+
+  /* nav */
+}
+/* media */
+@media screen only and (min-width: 769px) {
+  nav {
+    transform: translateY(0);
+  }
+}
+.close-x {
+  position: fixed;
+  top: 0.5em;
+  left: 15em;
+  margin: 2em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.side_bar {
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger, .close-x {
+  position: fixed;
+  top: 0;
+  left: 5;
+  border-bottom: 5px 5px;
+}
+
+a:hover {
+  padding: 7px 14px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+
+nav li a:hover {
+  color: lime;
+}
+
+/* .main-content { */
+/*   padding: 100p; */
+/* } */
+section {
+  background-color: #464860;
+  height: 90vh;
+  margin: 0;
+  padding: 2.5rem 4rem;
+}
+
+section:nth-of-type(2n) {
+  background-color: #ccc;
+}
+
+/* section:last-of-type { */
+/*   height: 100vh; */
+/* } */
+section#credits {
+  height: 30vh;
+  background: #151515;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  /* padding: 150px; */
+  text-align: center;
+}
+
+.active {
+  color: lime;
+  font-weight: 600;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  align: left;
+  cursor: pointer;
+  display: block;
+}
+
+.logo-parent {
+  position: relative;
+}
+
+#logo {
+  position: fixed;
+  top: 10px;
+  left: 40%;
+  font-size: 40px;
+  display: block;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
