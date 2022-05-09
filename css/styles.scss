@@ -1,6 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
-
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 * {
   box-sizing: border-box
 }
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
 }
 
 .open-nav {
@@ -49,7 +50,6 @@ body {
         padding: .75em 23em;
         display: block;
         width: 100%;
-
         &:hover {
           background: white;
         } /*  hover */
@@ -137,21 +137,35 @@ nav li a:hover {
   color: lime;
 }
 
-/* .main-content { */
-/*   padding: 100p; */
-/* } */
+// .main-content { 
+
+//   font-family: 'Koulen';
+  
+// } 
 
 section {
-  background-color: #464860;
+  display: flex;
+  flex-direction: column;
+  background-color: #14191A;
   height: 90vh;
   margin:0;
   padding:2.5rem 4rem;
+  position: relative;
+  z-index: -1;
 }
 
 section:nth-of-type(2n) {
   background-color: #ccc;
 }
 
+section#home {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* section:last-of-type { */
 /*   height: 100vh; */
 /* } */
@@ -193,4 +207,85 @@ label {
   display: block;
 }
 
+
+// Triangle
+.custom-shape-divider-bottom-1652094609 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1652094609 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 104px;
+}
+
+.custom-shape-divider-bottom-1652094609 .shape-fill {
+    fill: #ccc;
+}
+
+
+// Curve
+
+.custom-shape-divider-bottom-1652095691 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1652095691 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 78px;
+}
+
+.custom-shape-divider-bottom-1652095691 .shape-fill {
+    fill: #14191A;
+}
+
+
+// Multiple Waves
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('svg/layered-waves-haikei.svg');
+  
+}
+
+// Multiple Waves
+.custom-shape-divider-top-1652098078 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1652098078 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 106px;
+}
+
+.custom-shape-divider-top-1652098078 .shape-fill {
+    fill: #14191A;
+}
 
