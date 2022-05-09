@@ -2,6 +2,13 @@
 // @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 // @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  size: 64;
+}
+
 * {
   box-sizing: border-box
 }
@@ -11,7 +18,9 @@ html {
 }
 
 body {
+  margin: 0;
   // font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif; 
 }
 
 .open-nav {
@@ -75,14 +84,7 @@ body {
 
 } /* media */ 
 
-@media screen only and (min-width: 769px) {
 
-  nav {
-    transform: translateX(0);
-  }
-
-
-}
 
 .close-x {
   position: fixed;
@@ -175,11 +177,44 @@ section#credits {
   background: #151515;
 }
 
+section#stack {
+  flex-direction: column;
+  align-items: column;
+
+}
+
+section#contact {
+  flex-dirction: row;
+  align-items: flex-end;
+  h1 {
+    color: #14191A;
+  }
+}
+
+section#about {
+  flex-direction: column;
+  align-items: flex-end;
+
+}
 h1 {
   color: white;
   font-weight: 600;
   /* padding: 150px; */
   text-align: center;
+  align-items: center;
+}
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+ 
+}
+
+#head1 {
+  font-size: 3em;
 }
 
 .active {
