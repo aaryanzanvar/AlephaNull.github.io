@@ -38,7 +38,7 @@ body {
     z-index: 999;
     opacity: 0.75;
     border-bottom: 1px solid black;
-    background: #858089;
+    background: #001220;
     border-radius: 0 20% 60% 0;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
@@ -157,7 +157,6 @@ section#credits {
 
 section#stack {
   flex-direction: column;
-  align-items: flex-end;
 }
 
 section#contact {
@@ -260,18 +259,6 @@ label {
 
 .custom-shape-divider-bottom-1652095691 .shape-fill {
   fill: #14191A;
-}
-
-.spacer {
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.layer1 {
-  background-image: url("svg/layered-waves-haikei.svg");
 }
 
 .custom-shape-divider-top-1652098078 {
