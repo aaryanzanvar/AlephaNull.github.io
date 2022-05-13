@@ -118,6 +118,7 @@ body , html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 
 }
 
@@ -129,9 +130,6 @@ body , html{
   border-bottom: 5px 5px;
 }
 
-a:hover {
-  padding: 7px 14px;
-}
 
 nav ul {
   padding: 0;
@@ -153,6 +151,7 @@ nav li a {
 
 nav li a:hover {
   color: lime;
+  padding: 7px 14px;
 }
 
 // .main-content { 
@@ -169,7 +168,7 @@ section {
   margin:0;
   padding:2.5rem 4rem;
   position: relative;
-  z-index: -1;
+  // z-index: -1;
 }
 
 section:nth-of-type(2n) {
@@ -181,15 +180,12 @@ section:nth-of-type(2n) {
 
 section#home {
   position: relative;
-  z-index: -1;
+  // z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 }
-/* section:last-of-type { */
-/*   height: 100vh; */
-/* } */
 
 section#credits {
   height: 30vh;
@@ -265,8 +261,8 @@ label {
 }
 
 
-// Triangle
-.custom-shape-divider-bottom-1652094609 {
+// Triangle for Home
+.home-curve {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -275,21 +271,21 @@ label {
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1652094609 svg {
+.home-curve svg {
     position: relative;
     display: block;
     width: calc(110% + 1.3px);
     height: 104px;
 }
 
-.custom-shape-divider-bottom-1652094609 .shape-fill {
+.home-curve .shape-fill {
     fill: $colLight;
 }
 
 
-// Curve
+// Curve got About
 
-.custom-shape-divider-bottom-1652095691 {
+.about-curve {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -299,44 +295,21 @@ label {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1652095691 svg {
+.about-curve svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 78px;
 }
 
-.custom-shape-divider-bottom-1652095691 .shape-fill {
+.about-curve .shape-fill {
     fill: $colDark;
 }
 
-// arrow
 
-.custom-shape-divider-top-1652424942 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+// Multiple Waves for credits 
 
-.custom-shape-divider-top-1652424942 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 72px;
-}
-
-.custom-shape-divider-top-1652424942 .shape-fill {
-    fill: #14191A;
-}
-
-
-// Multiple Waves
-
-.custom-shape-divider-bottom-1652102878 {
+.credit-curve {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -346,14 +319,14 @@ label {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1652102878 svg {
+.credit-curve svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 110px;
 }
 
-.custom-shape-divider-bottom-1652102878 .shape-fill {
+.credit-curve .shape-fill {
     fill: #727272;
 }
 
@@ -401,5 +374,18 @@ label {
 
 .contact-curve .shape-fill {
     fill: #14191A;
+}
+
+/////////////////////////////////
+
+
+
+
+.proj-card {
+  a {
+    position: relative;
+    z-index: 20;
+    pointer-events: all;
+  }
 }
 
