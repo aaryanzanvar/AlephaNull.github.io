@@ -16,7 +16,7 @@
 
 $colDark: #14191A;
 $colLight: #ccc;
-$altColDark: #001220;
+$altColDark: grey;
 
 * {
   box-sizing: border-box;
@@ -29,13 +29,6 @@ html {
 
 body , html{
   margin: 0;
-  // line-height: normal;
-  // color: inherit;
-  // text-align: inherit;
-  // font-family : inherit;
-  // font-size : medium;
-  // font-weight : normal;
-  // font-family: 'Montserrat', sans-serif;
   font-family: 'Share Tech Mono', monospace;
   }
 
@@ -51,7 +44,13 @@ body , html{
 
   .hamburger, .close-x {
     display: block;
+    color: #97b0c4;
   }
+
+  .close-x {
+    background: #97b0c4;
+  }
+
 
   nav {
     position: fixed;
@@ -75,6 +74,7 @@ body , html{
         padding: .75em 23em;
         display: block;
         width: 100%;
+        font-size: 1.5em;
         &:hover {
           background: white;
         } /*  hover */
