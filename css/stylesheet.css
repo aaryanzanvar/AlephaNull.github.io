@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+  font-family: "Share Tech Mono", monospace;
+  src: url(Fonts/sharetechmono-regular-webfont.woff);
   size: 64;
 }
 * {
@@ -11,9 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body, html {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Share Tech Mono", monospace;
 }
 
 .open-nav {
@@ -137,6 +138,9 @@ section {
 section:nth-of-type(2n) {
   background-color: #ccc;
 }
+section:nth-of-type(2n) h1 {
+  color: #14191A;
+}
 
 section#home {
   position: relative;
@@ -152,19 +156,15 @@ section#home {
 /* } */
 section#credits {
   height: 30vh;
-  background: #151515;
+  background: #727272;
 }
 
 section#stack {
   flex-direction: column;
 }
 
-section#contact {
-  flex-direction: row;
-  align-items: flex-start;
-}
 section#contact h1 {
-  color: #14191A;
+  color: #ccc;
 }
 
 section#about {
@@ -261,23 +261,24 @@ label {
   fill: #14191A;
 }
 
-.custom-shape-divider-top-1652098078 {
+.custom-shape-divider-top-1652424942 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1652098078 svg {
+.custom-shape-divider-top-1652424942 svg {
   position: relative;
   display: block;
-  width: calc(155% + 1.3px);
-  height: 106px;
+  width: calc(100% + 1.3px);
+  height: 72px;
 }
 
-.custom-shape-divider-top-1652098078 .shape-fill {
+.custom-shape-divider-top-1652424942 .shape-fill {
   fill: #14191A;
 }
 
@@ -299,7 +300,28 @@ label {
 }
 
 .custom-shape-divider-bottom-1652102878 .shape-fill {
-  fill: #151515;
+  fill: #727272;
+}
+
+.project-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 103px;
+}
+
+.project-curve .shape-fill {
+  fill: #ccc;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

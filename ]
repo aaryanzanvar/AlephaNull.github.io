@@ -358,10 +358,9 @@ label {
 }
 
 // Curves for Projects
-
-.project-curve {
+.custom-shape-divider-top-1652429285 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -369,14 +368,16 @@ label {
     transform: rotate(180deg);
 }
 
-.project-curve svg {
+.custom-shape-divider-top-1652429285 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 103px;
+    height: 70px;
+    transform: rotateY(180deg);
 }
 
-.project-curve .shape-fill {
-    fill: #ccc;
+.custom-shape-divider-top-1652429285 .shape-fill {
+    fill: $colDark;
 }
+
 

@@ -193,7 +193,7 @@ section#home {
 
 section#credits {
   height: 30vh;
-  background: #727272;
+  background: #151515;
 }
 
 section#stack {
@@ -354,29 +354,11 @@ label {
 }
 
 .custom-shape-divider-bottom-1652102878 .shape-fill {
-    fill: #727272;
+    fill: #151515;
 }
 
-// Curves for Projects
 
-.project-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
 
-.project-curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 103px;
-}
 
-.project-curve .shape-fill {
-    fill: #ccc;
-}
+
 
