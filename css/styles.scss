@@ -9,10 +9,10 @@
 
 
 
-
 $colDark: #14191A;
 $colLight: #ccc;
 $altColDark: grey;
+
 
 * {
   box-sizing: border-box;
@@ -50,6 +50,25 @@ body , html{
     width: 2.5em;
     height: 2.5em;
   }
+
+
+  section#credits > .end-list {
+    position: absolute;
+    font-size: 1em;
+    left: 0.5em;
+    bottom: 1em;
+
+  }
+
+  #src-gh {
+    display: none;
+  }
+
+  .made-with {
+    right: 4em;
+    bottom: 1em;
+  }
+
 
 
 
@@ -99,9 +118,36 @@ body , html{
     
   } /* nav */
 
-} /* media */ 
+
+} /* media */
 
 
+.end-list {
+  font-size: 1.2em;
+
+  li {
+    list-style: none;
+    a {
+      pointer-events: all;
+      z-index: 20;
+      position: absolute;
+      text-decoration: none;
+    }
+  }
+}
+
+.up-arrow {
+  margin: 1em;
+  &:hover {
+    transition: margin .3s;
+    margin: 1.5em;
+  }
+}
+
+.sass-icon {
+  width: 2em;
+  height: 2em;
+}
 
 .close-x {
   position: fixed;
@@ -157,11 +203,6 @@ nav li a:hover {
   font-size: 1.2em;
 }
 
-// .main-content { 
-
-//   font-family: 'Koulen';
-  
-// } 
 
 section {
   display: flex;
@@ -297,124 +338,6 @@ label {
   display: block;
 }
 
-////////////////////////////////////////////////
-// Triangle for Home
-.home-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.home-curve svg {
-    position: relative;
-    display: block;
-    width: calc(110% + 1.3px);
-    height: 104px;
-}
-
-.home-curve .shape-fill {
-    fill: $colLight;
-}
-
-
-// Curve got About
-
-.about-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.about-curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 78px;
-}
-
-.about-curve .shape-fill {
-    fill: $colDark;
-}
-
-
-// Multiple Waves for credits 
-
-.credit-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.credit-curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 110px;
-}
-
-.credit-curve .shape-fill {
-    fill: #727272;
-}
-
-// Curves for Projects
-
-.project-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.project-curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 103px;
-}
-
-.project-curve .shape-fill {
-    fill: #ccc;
-}
-
-// Curve for Contact 
-
-.contact-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.contact-curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 103px;
-}
-
-.contact-curve .shape-fill {
-    fill: #14191A;
-}
-
-/////////////////////////////////
-
 
 .proj-card, .proj-card2, .proj-card3 {
   border-radius: 0.5em;
@@ -452,22 +375,6 @@ label {
   }
 }
 
-@media screen and (max-width: 300px) and (min-width: 576px) {
-  footer {
-    display: inline;
-    position: absolute;
-    color: grey;
-    text-align: center;
-    top: 75%;
-    left: 50%; 
-    color: red;
-  }
-
-  .desc {
-    font-size: 0.2em;
-  }
-
-}
 
 footer {
   display: inline;
