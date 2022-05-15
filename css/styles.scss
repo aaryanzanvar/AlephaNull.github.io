@@ -178,10 +178,10 @@ section:nth-of-type(2n) {
 section#home {
   position: relative;
   // z-index: -1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: flex-start;
 }
 
 section#credits {
@@ -225,6 +225,12 @@ h1 {
   align-items: center;
 }
 
+h2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .rainbow {
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
   background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
@@ -263,7 +269,7 @@ label {
   display: block;
 }
 
-
+////////////////////////////////////////////////
 // Triangle for Home
 .home-curve {
     position: absolute;
@@ -386,6 +392,8 @@ label {
   border-radius: 0.5em;
   padding: 0.5rem;
   margin: 0.5rem;
+  width: 16rem;
+
   background-color: $colDark;
   color: $colLight;
 
@@ -393,11 +401,14 @@ label {
     transition: padding .3s,
                 margin .3s,
                 background-color .3s,
+                width .3s,
+                height .3s,
                 border-radius .3s;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1.5rem;
     border-radius: 1em;
     background-color: #15181a;
+    width: 18rem;
   }
 
 
@@ -407,7 +418,40 @@ label {
 .car-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center;  
+  button {
+    color: red;
+  }
 }
 
+@media screen and (max-width: 300px) and (min-width: 576px) {
+  footer {
+    display: inline;
+    position: absolute;
+    color: grey;
+    text-align: center;
+    top: 75%;
+    left: 50%; 
+    color: red;
+  }
+
+  .desc {
+    font-size: 0.2em;
+  }
+
+}
+
+footer {
+  display: inline;
+  position: absolute;
+  color: grey;
+  text-align: center;
+  top: 80%;
+  left: 50%; 
+  font-size: 1.3em;
+}
+
+.desc {
+  font-size: 1.2em;
+  margin-left: 2.6em;
+}
