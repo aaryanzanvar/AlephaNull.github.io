@@ -12,7 +12,17 @@
 $colDark: #14191A;
 $colLight: #ccc;
 $altColDark: grey;
+$white: #fff;
+$black: #000;
 
+@function set-text-color($color) {
+    @if (lightness( $color ) > 50) {
+      @return $black; // Lighter color, return black
+    }
+    @else {
+      @return $white; // Darker color, return white
+    }
+}
 
 * {
   box-sizing: border-box;
@@ -128,6 +138,7 @@ body , html{
   li {
     list-style: none;
     a {
+      color: red;
       pointer-events: all;
       z-index: 20;
       position: absolute;
@@ -189,13 +200,16 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #333;
+  color: grey;
   display: block;
   padding: 0.6rem 0.3rem;
   font-weight: 400;
   transition: all ease-out 250ms;
 }
 
+.change-color {
+  color: white;
+}
 
 nav li a:hover {
   color: lime;
@@ -390,3 +404,15 @@ footer {
   font-size: 1.2em;
   margin-left: 2.6em;
 }
+
+
+.dummy {
+  border: 1px solid $colDark;
+  width: 5px;
+  height: 5px;
+
+}
+
+
+
+

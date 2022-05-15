@@ -106,6 +106,7 @@ body, html {
   list-style: none;
 }
 .end-list li a {
+  color: red;
   pointer-events: all;
   z-index: 20;
   position: absolute;
@@ -163,11 +164,15 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #333;
+  color: grey;
   display: block;
   padding: 0.6rem 0.3rem;
   font-weight: 400;
   transition: all ease-out 250ms;
+}
+
+.change-color {
+  color: white;
 }
 
 nav li a:hover {
@@ -330,6 +335,12 @@ footer {
 .desc {
   font-size: 1.2em;
   margin-left: 2.6em;
+}
+
+.dummy {
+  border: 1px solid #14191A;
+  width: 5px;
+  height: 5px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
