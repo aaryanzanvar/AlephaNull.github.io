@@ -28,6 +28,9 @@ body, html {
   .hamburger, .close-x {
     display: block;
     color: #97b0c4;
+    width: 2em;
+    height: 2em;
+    align-self: flex-start;
   }
 
   .close-x {
@@ -41,7 +44,7 @@ body, html {
     height: 100vh;
     width: 50%;
     z-index: 999;
-    opacity: 0.75;
+    /* opacity: 0.75; */
     border-bottom: 1px solid black;
     background: grey;
     border-radius: 0 20% 60% 0;
@@ -149,7 +152,25 @@ section:nth-of-type(2n) h1 {
 section#home {
   position: relative;
 }
+section#home .down-arrow {
+  stroke: white;
+  position: absolute;
+  bottom: 8em;
+  width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+section#home .down-arrow path {
+  fill: white;
+}
 
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 section#credits {
   height: 30vh;
   background: #727272;
