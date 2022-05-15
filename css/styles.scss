@@ -37,7 +37,7 @@ body , html{
     margin-left: 0px;
   }
 
-  .hamburger, .close-x {
+  .hamburger {
     display: block;
     color: #97b0c4;
     width: 2em;
@@ -46,8 +46,11 @@ body , html{
   }
 
   .close-x {
-    background: #97b0c4;
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
   }
+
 
 
   nav {
@@ -59,7 +62,7 @@ body , html{
     z-index: 999;
     /* opacity: 0.75; */
     border-bottom: 1px solid black;
-    background: $altColDark;
+    background: #bbbfbb;
     border-radius: 0 20% 60% 0;
     transform: translateX(-100%); 
     transition: transform .5s ease-in-out; 
