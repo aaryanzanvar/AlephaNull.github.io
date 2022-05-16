@@ -132,7 +132,7 @@ body , html{
   }
 }
 
-.sass-icon {
+.icon-tech {
   width: 2em;
   height: 2em;
 }
@@ -460,6 +460,11 @@ footer {
     gap: 2em;
     font-size: 1.2em;
   }
+
+  .icon-tech {
+    width: 1.5em;
+    height: 1.5em;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -470,5 +475,9 @@ footer {
 
   section#stack {
     height: 120vh;
+  }
+
+  .icon-tech {
+    display: none;
   }
 }
