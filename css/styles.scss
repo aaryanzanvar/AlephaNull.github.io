@@ -12,17 +12,6 @@
 $colDark: #14191A;
 $colLight: #ccc;
 $altColDark: grey;
-$white: #fff;
-$black: #000;
-
-@function set-text-color($color) {
-    @if (lightness( $color ) > 50) {
-      @return $black; // Lighter color, return black
-    }
-    @else {
-      @return $white; // Darker color, return white
-    }
-}
 
 * {
   box-sizing: border-box;
@@ -77,6 +66,20 @@ body , html{
   .made-with {
     right: 4em;
     bottom: 1em;
+  
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+
+  section#about {
+    height: 180vh;
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -132,20 +135,6 @@ body , html{
 } /* media */
 
 
-.end-list {
-  font-size: 1.2em;
-
-  li {
-    list-style: none;
-    a {
-      color: red;
-      pointer-events: all;
-      z-index: 20;
-      position: absolute;
-      text-decoration: none;
-    }
-  }
-}
 
 .up-arrow {
   margin: 1em;
@@ -332,13 +321,13 @@ h2 {
   font-weight: 600;
 }
 
-label {
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  align: left;
-  cursor: pointer;
-  display: block;
-}
+// label {
+//   margin: 0 40px 0 0;
+//   font-size: 26px;
+//   align: left;
+//   cursor: pointer;
+//   display: block;
+// }
 
 .logo-parent {
   position: relative;
@@ -402,16 +391,42 @@ footer {
 
 .desc {
   font-size: 1.2em;
-  margin-left: 2.6em;
+  margin-left: 3.2em;
 }
 
+.contacts {
 
-.dummy {
-  border: 1px solid $colDark;
-  width: 5px;
-  height: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2em;
+  color: $colLight;
+
+  img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    align-self: center;
+  }
 
 }
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-gap: 0.5em;
+    font-size: 1em;
+    align-items: center;
+
+    img {
+      width: 3em;
+      height: 3em;
+    }
+  }
+}
+
 
 
 
