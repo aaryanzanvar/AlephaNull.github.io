@@ -51,13 +51,6 @@ body , html{
   }
 
 
-  section#credits > .end-list {
-    position: absolute;
-    font-size: 1em;
-    left: 0.5em;
-    bottom: 1em;
-
-  }
 
   #src-gh {
     display: none;
@@ -76,11 +69,6 @@ body , html{
   }
 
 
-  section#about {
-    height: 180vh;
-    margin: 0;
-    padding: 0;
-  }
 
 
 
@@ -427,6 +415,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 717px) {
+  section#about {
+    height: 160vh;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 
 
