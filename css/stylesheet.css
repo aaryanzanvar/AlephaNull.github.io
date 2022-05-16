@@ -344,7 +344,7 @@ footer {
 }
 @media screen and (max-width: 717px) {
   section#about {
-    height: 160vh;
+    height: 180vh;
     margin: 0;
     padding: 0;
   }
