@@ -417,7 +417,8 @@ footer {
 
 @media screen and (max-width: 717px) {
   section#about {
-    height: 180vh;
+    /* height: 180vh; */
+    height: max-content;
     margin: 0;
     padding: 0;
   }
@@ -474,7 +475,8 @@ footer {
   }
 
   section#stack {
-    height: 120vh;
+  /* height: 120vh; */ 
+    height: max-content;
   }
 
   .icon-tech {
