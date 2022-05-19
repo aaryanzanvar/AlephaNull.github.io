@@ -111,6 +111,11 @@ body, html {
   height: 2em;
 }
 
+#icon-tech-sass {
+  width: 2em;
+  height: 2em;
+}
+
 .close-x {
   position: fixed;
   top: 0.5em;
@@ -154,10 +159,6 @@ nav li a {
   padding: 0.6rem 0.3rem;
   font-weight: 400;
   transition: all ease-out 250ms;
-}
-
-.change-color {
-  color: white;
 }
 
 nav li a:hover {
