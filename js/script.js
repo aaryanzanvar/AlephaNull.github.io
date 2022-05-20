@@ -58,4 +58,22 @@ close.addEventListener('click', () => {
 
 })
 
+///////////////////////////
+
+const descNerd = document.querySelector(".desc-nerd");
+const descNormal = document.querySelector(".desc-normal");
+const togBtn = document.querySelector("#togBtn");
+
+// descNerd.classList.add("hide-text");
+
+togBtn.addEventListener("click", function() {
+  if (togBtn.checked == true) {
+    descNerd.classList.add("hide-text");
+    descNormal.classList.remove("hide-text");
+  } else {
+    descNerd.classList.remove("hide-text");
+    descNormal.classList.add("hide-text");
+  }
+})
+
 
