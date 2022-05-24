@@ -63,17 +63,31 @@ close.addEventListener('click', () => {
 const descNerd = document.querySelector(".desc-nerd");
 const descNormal = document.querySelector(".desc-normal");
 const togBtn = document.querySelector("#togBtn");
+const titleNerd = document.querySelector(".title-nerd");
+const titleNorm = document.querySelector(".title-normal");
 
 // descNerd.classList.add("hide-text");
 
 togBtn.addEventListener("click", function() {
   if (togBtn.checked == true) {
+    /** descriptions **/ 
     descNerd.classList.add("hide-text");
     descNormal.classList.remove("hide-text");
+    /** titles **/
+    // titleNerd.classList.toggle("hide-text");
+    titleNerd.classList.add("hide-text");
+    titleNorm.classList.remove("hide-text");
+
   } else {
     descNerd.classList.remove("hide-text");
     descNormal.classList.add("hide-text");
+    /** titles **/
+    // titleNorm.classList.toggle("hide-text");
+    titleNerd.classList.remove("hide-text");
+    titleNorm.classList.add("hide-text");
   }
 })
+
+
 
 
