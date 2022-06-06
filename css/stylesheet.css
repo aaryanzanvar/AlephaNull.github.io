@@ -14,6 +14,7 @@ html {
 
 body, html {
   font-family: "Share Tech Mono", monospace;
+  line-height: normal;
 }
 
 .open-nav {
@@ -26,7 +27,7 @@ body, html {
 }
 
 /********************/
-.toggle {
+section#about > .toggle {
   --width: 80px;
   --height: calc(var(--width) / 3);
   position: relative;
@@ -38,11 +39,11 @@ body, html {
   cursor: pointer;
 }
 
-.toggle input {
+section#about > .toggle input {
   display: none;
 }
 
-.toggle .slider {
+section#about > .toggle .slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +54,7 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle .slider::before {
+section#about > .toggle .slider::before {
   content: "";
   position: absolute;
   top: 0;
@@ -66,15 +67,15 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked + .slider {
+section#about > .toggle input:checked + .slider {
   background-color: #2196F3;
 }
 
-.toggle input:checked + .slider::before {
+section#about > .toggle input:checked + .slider::before {
   transform: translateX(calc(var(--width) - var(--height)));
 }
 
-.toggle .labels {
+section#about > .toggle .labels {
   position: absolute;
   top: 8px;
   left: 0;
@@ -85,7 +86,7 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle .labels::after {
+section#about > .toggle .labels::after {
   content: attr(data-off);
   position: absolute;
   right: 5px;
@@ -95,7 +96,7 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle .labels::before {
+section#about > .toggle .labels::before {
   content: attr(data-on);
   position: absolute;
   left: 5px;
@@ -105,11 +106,11 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked ~ .labels::after {
+section#about > .toggle input:checked ~ .labels::after {
   opacity: 0;
 }
 
-.toggle input:checked ~ .labels::before {
+section#about > .toggle input:checked ~ .labels::before {
   opacity: 1;
 }
 
