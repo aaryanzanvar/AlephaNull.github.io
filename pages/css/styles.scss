@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Signika:300,700");
-
+// @import url("https://fonts.googleapis.com/css?family=Signika:300,700");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 body , html {
   margin: 0;
   animation: BackgroundFadeIn 2.5s 2s forwards;
@@ -55,7 +55,7 @@ body , html {
 
 .headers h1 {
     font-size: 55px;
-    font-family: Signika;
+    font-family: Raleway;
     color: white;
 }
 
